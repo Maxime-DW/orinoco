@@ -1,22 +1,24 @@
 @font-face {
     font-family: 'belligerent_madnessregular';
-    src: url(polices/belligerentmadness_regular_macroman/belligerent-webfont.eot);
-    src: url(polices/belligerentmadness_regular_macroman/belligerent-webfont.eot?#iefix) format('embedded-opentype'),
-         url(polices/belligerentmadness_regular_macroman/belligerent-webfont.woff) format('woff'),
-         url(polices/belligerentmadness_regular_macroman/belligerent-webfont.ttf) format('truetype'),
-         url(polices/belligerentmadness_regular_macroman/belligerent-webfont.svg#belligerent_madnessregular) format('svg');
+    src: url(./public/polices/belligerentmadness_regular_macroman/belligerent-webfont.eot);
+    src: url(./public/polices/belligerentmadness_regular_macroman/belligerent-webfont.eot?#iefix) format('embedded-opentype'),
+         url(./public/polices/belligerentmadness_regular_macroman/belligerent-webfont.woff) format('woff'),
+         url(./public/polices/belligerentmadness_regular_macroman/belligerent-webfont.ttf) format('truetype'),
+         url(./public/polices/belligerentmadness_regular_macroman/belligerent-webfont.svg#belligerent_madnessregular) format('svg');
     font-weight: normal;
     font-style: normal;
 
 }
 
 
+/* PAGE D'ACCUEIL */
+
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     box-sizing: border-box;
 }
 h1 {
-    font-family: 'belligerent_madnessregular', Arial, Helvetica, sans-serif;
+    font-family: 'belligerent_madnessregular', Helvetica, Arial, sans-serif;
 }
 img {
     max-width: 100%;
@@ -35,7 +37,7 @@ footer {
     height: 50px;
 }
 .fa-shopping-cart {
-    padding-right: 1rem;
+    padding-right: 0.5rem;
     background: rgb(207,219,0);
     background: linear-gradient(90deg, rgba(207,219,0,0.6786064767703957) 2%, rgba(96,39,122,0.7962535355939251) 49%);
     -webkit-background-clip: text;
@@ -56,7 +58,7 @@ h2, p {
     text-align: justify;
 }
 .background {
-    background-image: url("images/photo-font.jpg");
+    background-image: url("./public/img/photo-font.jpg");
     background-size: cover;
 }
 nav ul {
@@ -66,6 +68,7 @@ nav ul {
 .background h2 {
     background: rgba(96,39,122,0.4);
     color: #FFF;
+    text-shadow: 1px 2px 2px #000;
     margin: auto;
     margin-top: 1rem;
     text-align: center;
@@ -99,4 +102,24 @@ em {
     font-style: normal;
     border-bottom: 1.5px solid black;
 }
+
+@media (min-width: 768px) {
+    main section {
+        display: flex;
+    }
+    .oak {
+        display: flex;
+    }
+    img {
+        margin: auto;
+    }
+}
+
+@media (min-width: 1200px) {
+    main {
+        width: 80%;
+        margin: auto;
+    }
+}
+
  
