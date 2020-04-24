@@ -77,7 +77,7 @@ nav ul {
     height: 100%;
 }
 main {
-    margin-bottom: 60px;
+    margin-bottom: 100px;
 }
 h3 {
     text-align: center;
@@ -103,6 +103,10 @@ em {
     border-bottom: 1.5px solid black;
 }
 
+/* PAGES PRODUITS */
+
+
+
 @media (min-width: 768px) {
     main section {
         display: flex;
@@ -119,6 +123,7 @@ em {
     main {
         width: 80%;
         margin: auto;
+        margin-bottom: 100px;
     }
 }
 
