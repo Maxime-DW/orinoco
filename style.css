@@ -11,7 +11,7 @@
 }
 
 
-/* TEMPLATE */
+/* TEMPLATE PAGE D'ACCUEIL - PAGE PRODUIT*/
 
 * {
     font-family: Helvetica, Arial, sans-serif;
@@ -102,8 +102,66 @@ em {
     font-style: normal;
     border-bottom: 1.5px solid black;
 }
+select {
+    background-color: rgba(96,39,122,0.4);
+    padding: 0.3rem;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+/* PAGE PANIER */
+
+table {
+    border-collapse: collapse;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+th, td {
+    border: 2px solid rgba(96,39,122,0.4);
+    text-align: center;
+}
+.panier {
+    background-color: #F3E9F1;
+}
+.panier section {
+    margin: 0.5rem;
+}
+.panier h3 {
+    margin-bottom: 2rem;
+}
+fieldset {
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-color: rgba(96,39,122,0.4);
+}
+input {
+    line-height: 2rem;
+    background-color: rgba(96,39,122,0.4);
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+label {
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+legend {
+    text-transform: uppercase;
+    font-weight: bold;
+}
 
 
+@media (min-width: 576px) {
+    th, td {
+        padding: 0.5rem;
+    }
+    fieldset {
+        width: 80%;
+        margin: auto;
+        margin-bottom: 2rem;
+    }
+}
 
 @media (min-width: 768px) {
     main section {
@@ -112,8 +170,20 @@ em {
     .oak {
         display: flex;
     }
+    .description {
+        margin: 1rem;
+    }
     img {
         margin: auto;
+    }
+    .panier section {
+        flex-direction: column;
+    }
+    fieldset {
+        width: 30rem;
+    }
+    th, td {
+        padding: 0.9rem;
     }
 }
 
